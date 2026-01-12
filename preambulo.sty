@@ -1,6 +1,54 @@
+% Define el preambulo
 \ProvidesPackage{preambulo}
 
-\RequirePackage{amsmath,amssymb}
+
+% Simbología matemática
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+
+% Texto random para testear cosas
 \RequirePackage{lipsum}
+
+% Fuente Palatino
 \RequirePackage{newpxmath}
 \RequirePackage{newpxtext}
+%\RequirePackage{fbb}
+
+% Figuras
+\RequirePackage{graphicx}
+\graphicspath{{./Figuras/}}
+% Cambiar nombre del epigrafe
+\RequirePackage[figurename=Figura]{caption}
+
+% Para referencias
+\RequirePackage{hyperref}
+
+% Colores en general
+\RequirePackage{xcolor}
+
+% Cajas de colores
+\RequirePackage[most]{tcolorbox}
+
+% All Tikz related
+\RequirePackage{tikz}
+\RequirePackage{tikz-3dplot}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns,snakes}
+
+% Dimensiones de la página
+\RequirePackage[a4paper, tmargin=2cm, textwidth=17cm, textheight=25.5cm, nomarginpar]{geometry}
+
+% Encabezados y pie de página aesthetic
+\RequirePackage{fancyhdr}
+
+% Definir los nombres de secciones
+\RequirePackage{titlesec}
+
+% Afinar el typesetting
+\RequirePackage{microtype}
+
+% Adaptación al español
+\RequirePackage[spanish,es-tabla]{babel}
